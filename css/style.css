@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/Montserrat/MontserratExtraLight.woff") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat/MontserratRegular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Montserrat/MontserratBold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/LatoRegular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato/LatoBold.woff2") format("woff2");
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family, sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.74;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+  border: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+:root {
+  --font-family: "Lato", "Arial", sans-serif;
+  --light-white: #ffffff;
+  --light-green: #495e4c;
+  --darken-color: #313743;
+  --dark-color: #000000;
+}
+
+.header {
+  min-height: 100vh;
+  background-image: url("../images/deask-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo__link {
+  width: 196px;
+  height: 61px;
+}
+
+.nav__items {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav__item {
+  font-size: 15px;
+  text-transform: lowercase;
+  color: var(--light-green);
+}
+
+/*# sourceMappingURL=style.css.map */

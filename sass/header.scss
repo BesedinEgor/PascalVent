@@ -1,0 +1,17 @@
+.header {
+  min-height: 100vh;
+  background-image: url("../images/deask-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo__link {
+  width: 196px;
+  height: 61px;
+}

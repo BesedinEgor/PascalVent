@@ -1,0 +1,11 @@
+.nav__items {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav__item {
+  font-size: 15px;
+  text-transform: lowercase;
+  color: var(--light-green);
+}

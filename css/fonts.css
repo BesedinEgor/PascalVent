@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/Montserrat/MontserratExtraLight.woff") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat/MontserratRegular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Montserrat/MontserratBold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/LatoRegular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato/LatoBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+/*# sourceMappingURL=fonts.css.map */
