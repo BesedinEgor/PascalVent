@@ -1,23 +1,64 @@
 .header {
   min-height: 100vh;
+  padding-top: 22px;
+  background-image: url("../images/mobile-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
-@media (min-width: 1080) {
+@media (min-width: 1080px) {
   .header {
     background-image: url("../images/deask-bg.jpg");
   }
 }
 
-@media (min-width: 1080) {
-  .header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 73px;
+}
+
+.header__burger-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  border-radius: 15px;
+  background-color: var(--light-white);
+  box-shadow: 0px 4px 10px 0px rgba(73, 93, 76, 0.15);
+  cursor: pointer;
+  z-index: 5;
+}
+@media (min-width: 1080px) {
+  .header__burger-btn {
+    display: none;
+  }
+}
+.header__burger-btn::before {
+  content: "";
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  background-color: rgba(255, 255, 255, 0.45);
+  top: -10px;
+  border-radius: 20px;
+}
+@media (min-width: 1080px) {
+  .header__burger-btn::before {
+    display: none;
   }
 }
 
-@media (min-width: 1080) {
+.logo__link {
+  display: block;
+}
+.logo__link svg {
+  width: 168px;
+  height: 53px;
+}
+@media (min-width: 1080px) {
   .logo__link {
     width: 196px;
     height: 61px;
@@ -27,7 +68,7 @@
 .header__btn {
   display: none;
 }
-@media (min-width: 1080) {
+@media (min-width: 1080px) {
   .header__btn {
     display: block;
   }

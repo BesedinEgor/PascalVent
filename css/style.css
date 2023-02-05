@@ -1,36 +1,43 @@
 @font-face {
-  font-family: "Montserrat" sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/Montserrat/MontserratExtraLight.woff") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat" sans-serif;
+  font-family: "Proxima Nova" sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Montserrat/MontserratRegular.woff2") format("woff2");
+  src: url("../fonts/Proxima/proximanova_regular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat" sans-serif;
+  font-family: "Proxima Nova" sans-serif;
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Montserrat/MontserratBold.woff2") format("woff2");
+  src: url("../fonts/Proxima/proximanova_bold.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Lato" sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/lato/LatoRegular.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Lato" sans-serif;
+  font-family: "Ruberoid" sans-serif;
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/lato/LatoBold.woff2") format("woff2");
+  src: url("../fonts/Ruberoid/Ruberoid-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ruberoid" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Ruberoid/Ruberoid-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ruberoid" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Ruberoid/Ruberoid-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ruberoid" sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Ruberoid/Ruberoid-Light.woff2") format("woff2");
   font-display: swap;
 }
 html {
@@ -116,7 +123,7 @@ button {
 }
 
 :root {
-  --font-family: "Lato", "Arial", sans-serif;
+  --font-family: "Proxima Nova", "Arial", sans-serif;
   --light-white: #ffffff;
   --light-green: #495e4c;
   --darken-color: #313743;
@@ -125,24 +132,65 @@ button {
 
 .header {
   min-height: 100vh;
+  padding-top: 22px;
+  background-image: url("../images/mobile-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
-@media (min-width: 1080) {
+@media (min-width: 1080px) {
   .header {
     background-image: url("../images/deask-bg.jpg");
   }
 }
 
-@media (min-width: 1080) {
-  .header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 73px;
+}
+
+.header__burger-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  border-radius: 15px;
+  background-color: var(--light-white);
+  box-shadow: 0px 4px 10px 0px rgba(73, 93, 76, 0.15);
+  cursor: pointer;
+  z-index: 5;
+}
+@media (min-width: 1080px) {
+  .header__burger-btn {
+    display: none;
+  }
+}
+.header__burger-btn::before {
+  content: "";
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  background-color: rgba(255, 255, 255, 0.45);
+  top: -10px;
+  border-radius: 20px;
+}
+@media (min-width: 1080px) {
+  .header__burger-btn::before {
+    display: none;
   }
 }
 
-@media (min-width: 1080) {
+.logo__link {
+  display: block;
+}
+.logo__link svg {
+  width: 168px;
+  height: 53px;
+}
+@media (min-width: 1080px) {
   .logo__link {
     width: 196px;
     height: 61px;
@@ -152,21 +200,64 @@ button {
 .header__btn {
   display: none;
 }
-@media (min-width: 1080) {
+@media (min-width: 1080px) {
   .header__btn {
     display: block;
   }
 }
 
+.nav {
+  position: absolute;
+  padding-top: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 484px;
+  width: 100%;
+  background-color: #d9fadd;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+@media (min-width: 1080px) {
+  .nav {
+    display: block;
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    border-radius: 0;
+    padding-top: 0;
+    transform: none;
+  }
+}
+.nav.nav-open {
+  transform: translateX(0%);
+}
+
 .nav__items {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (min-width: 1080px) {
+  .nav__items {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 
 .nav__item {
   font-size: 15px;
   text-transform: lowercase;
+  color: var(--light-green);
+}
+
+.nav__link {
+  font-size: 20px;
   color: var(--light-green);
 }
 
