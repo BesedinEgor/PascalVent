@@ -125,20 +125,37 @@ button {
 
 .header {
   min-height: 100vh;
-  background-image: url("../images/deask-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
-
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+@media (min-width: 1080) {
+  .header {
+    background-image: url("../images/deask-bg.jpg");
+  }
 }
 
-.logo__link {
-  width: 196px;
-  height: 61px;
+@media (min-width: 1080) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1080) {
+  .logo__link {
+    width: 196px;
+    height: 61px;
+  }
+}
+
+.header__btn {
+  display: none;
+}
+@media (min-width: 1080) {
+  .header__btn {
+    display: block;
+  }
 }
 
 .nav__items {
