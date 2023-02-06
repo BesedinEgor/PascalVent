@@ -1,40 +1,40 @@
 @font-face {
-  font-family: "Proxima Nova" sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/Proxima/proximanova_regular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Proxima Nova" sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Proxima/proximanova_bold.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Ruberoid" sans-serif;
+  font-family: "Ruberoid", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Ruberoid/Ruberoid-Bold.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Ruberoid" sans-serif;
+  font-family: "Ruberoid", sans-serif;
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/Ruberoid/Ruberoid-SemiBold.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Ruberoid" sans-serif;
+  font-family: "Ruberoid", sans-serif;
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/Ruberoid/Ruberoid-Medium.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Ruberoid" sans-serif;
+  font-family: "Ruberoid", sans-serif;
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/Ruberoid/Ruberoid-Light.woff2") format("woff2");
@@ -89,8 +89,8 @@ button {
 }
 
 .container {
-  max-width: 1000px;
-  padding: 0 10px;
+  max-width: 350px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -163,6 +163,18 @@ button {
   cursor: pointer;
   z-index: 5;
 }
+.header__burger-btn svg rect.rect {
+  transition: all 0.5s;
+}
+.header__burger-btn:hover svg rect.rect {
+  width: 6px;
+  x: 19;
+  transition: all 0.3s;
+}
+.header__burger-btn:hover svg rect.rect1 {
+  width: 16px;
+  transition: all 0.3s;
+}
 @media (min-width: 1080px) {
   .header__burger-btn {
     display: none;
@@ -204,6 +216,43 @@ button {
   .header__btn {
     display: block;
   }
+}
+
+.header__box-title {
+  max-width: 290px;
+  margin: 0 auto;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Ruberoid", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #495e4c;
+}
+.header__title--solid {
+  position: relative;
+  text-align: right;
+}
+.header__title--solid::before {
+  content: "";
+  position: absolute;
+  width: 98px;
+  height: 2px;
+  color: #78c081;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__title--company {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #78c081;
 }
 
 .nav {

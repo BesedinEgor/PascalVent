@@ -30,6 +30,27 @@
   cursor: pointer;
   z-index: 5;
 
+  svg {
+    rect.rect {
+      transition: all 0.5s;
+    }
+  }
+
+  &:hover {
+    svg {
+      rect.rect {
+        width: 6px;
+        x: 19;
+        transition: all 0.3s;
+      }
+
+      rect.rect1 {
+        width: 16px;
+        transition: all 0.3s;
+      }
+    }
+  }
+
   @media (min-width: 1080px) {
     display: none;
   }
@@ -67,5 +88,45 @@
   display: none;
   @media (min-width: 1080px) {
     display: block;
+  }
+}
+
+.header__box-title {
+  max-width: 290px;
+  margin: 0 auto;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Ruberoid", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #495e4c;
+
+  &--solid {
+    position: relative;
+    text-align: right;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 98px;
+      height: 2px;
+      color: #78c081;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--company {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #78c081;
   }
 }
