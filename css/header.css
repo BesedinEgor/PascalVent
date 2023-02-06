@@ -121,6 +121,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #78c081;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=header.css.map */
