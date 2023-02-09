@@ -67,6 +67,17 @@ button {
   padding: 0;
   background: transparent;
   cursor: pointer;
+
+  &--style {
+    width: 100%;
+    padding: 20px 0 17px 0;
+    background: rgba(120, 192, 129, 0.25);
+    border: 15px solid transparent;
+    border-radius: 30px;
+    box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36),
+      300px 0px 0px #5ccd6a inset;
+    cursor: pointer;
+  }
 }
 
 .visually-hidden {

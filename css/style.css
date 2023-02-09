@@ -1,40 +1,40 @@
 @font-face {
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/Proxima/proximanova_regular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Proxima/proximanova_bold.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Ruberoid", sans-serif;
+  font-family: "Ruberoid";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Ruberoid/Ruberoid-Bold.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Ruberoid", sans-serif;
+  font-family: "Ruberoid";
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/Ruberoid/Ruberoid-SemiBold.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Ruberoid", sans-serif;
+  font-family: "Ruberoid";
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/Ruberoid/Ruberoid-Medium.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Ruberoid", sans-serif;
+  font-family: "Ruberoid";
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/Ruberoid/Ruberoid-Light.woff2") format("woff2");
@@ -110,6 +110,15 @@ button {
   background: transparent;
   cursor: pointer;
 }
+.button--style {
+  width: 100%;
+  padding: 20px 0 17px 0;
+  background: rgba(120, 192, 129, 0.25);
+  border: 15px solid transparent;
+  border-radius: 30px;
+  box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36), 300px 0px 0px #5ccd6a inset;
+  cursor: pointer;
+}
 
 .visually-hidden {
   position: absolute;
@@ -131,11 +140,12 @@ button {
 }
 
 .header {
-  min-height: 100vh;
   padding-top: 22px;
   background-image: url("../images/mobile-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  margin-bottom: 75px;
+  padding-bottom: 255px;
 }
 @media (min-width: 1080px) {
   .header {
@@ -219,8 +229,10 @@ button {
 }
 
 .header__box-title {
-  max-width: 290px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
 .header__title {
@@ -236,15 +248,15 @@ button {
 }
 .header__title--solid {
   position: relative;
-  text-align: right;
+  padding-left: 107px;
 }
 .header__title--solid::before {
   content: "";
   position: absolute;
-  width: 98px;
+  width: 93px;
   height: 2px;
   color: #78c081;
-  left: 0;
+  left: 5px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -253,7 +265,73 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #78c081;
-  z-index: -1;
+}
+
+.header__description {
+  position: relative;
+  max-width: 240px;
+  margin: 0;
+  padding: 0;
+  color: #7ca381;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-bottom: 46px;
+}
+.header__description::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -60px;
+  background-image: url("../images/svg/circle__description-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 50px;
+  height: 10px;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__adress {
+  padding-left: 32px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7b897d;
+  background-image: url("../images/svg/pin-adress.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  margin-bottom: 33px;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.header__link-phone {
+  padding-left: 32px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7b897d;
+  background-image: url("../images/phone-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__application {
+  font-family: "Ruberoid", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  color: var(--light-white);
+  text-transform: uppercase;
 }
 
 .nav {
