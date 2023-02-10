@@ -1,0 +1,195 @@
+.header {
+  min-height: 100vh;
+  padding-top: 22px;
+  background-image: url("../images/mobile-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 75px;
+  padding-bottom: 296px;
+}
+@media (min-width: 1080px) {
+  .header {
+    background-image: url("../images/deask-bg.jpg");
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 73px;
+}
+
+.header__burger-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  border-radius: 15px;
+  background-color: var(--light-white);
+  box-shadow: 0px 4px 10px 0px rgba(73, 93, 76, 0.15);
+  cursor: pointer;
+  z-index: 5;
+}
+.header__burger-btn svg rect.rect {
+  transition: all 0.5s;
+}
+.header__burger-btn:hover svg rect.rect {
+  width: 6px;
+  x: 19;
+  transition: all 0.3s;
+}
+.header__burger-btn:hover svg rect.rect1 {
+  width: 16px;
+  transition: all 0.3s;
+}
+@media (min-width: 1080px) {
+  .header__burger-btn {
+    display: none;
+  }
+}
+.header__burger-btn::before {
+  content: "";
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  background-color: rgba(255, 255, 255, 0.45);
+  top: -10px;
+  border-radius: 20px;
+}
+@media (min-width: 1080px) {
+  .header__burger-btn::before {
+    display: none;
+  }
+}
+
+.logo__link {
+  display: block;
+}
+.logo__link svg {
+  width: 168px;
+  height: 53px;
+}
+@media (min-width: 1080px) {
+  .logo__link {
+    width: 196px;
+    height: 61px;
+  }
+}
+
+.header__btn {
+  display: none;
+}
+@media (min-width: 1080px) {
+  .header__btn {
+    display: block;
+  }
+}
+
+.header__box-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Ruberoid", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #495e4c;
+}
+.header__title--solid {
+  position: relative;
+  padding-left: 107px;
+}
+.header__title--solid::before {
+  content: "";
+  position: absolute;
+  width: 93px;
+  height: 2px;
+  background-color: #78c081;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__title--company {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #78c081;
+}
+
+.header__description {
+  position: relative;
+  max-width: 240px;
+  margin: 0;
+  padding: 0;
+  color: #7ca381;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-bottom: 46px;
+}
+.header__description::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -60px;
+  background-image: url("../images/svg/circle__description-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 50px;
+  height: 10px;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__adress {
+  padding-left: 32px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7b897d;
+  background-image: url("../images/svg/pin-adress.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  margin-bottom: 33px;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.header__link-phone {
+  padding-left: 32px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7b897d;
+  background-image: url("../images/phone-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__application {
+  font-family: "Ruberoid", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  color: var(--light-white);
+  text-transform: uppercase;
+}/*# sourceMappingURL=header.css.map */
