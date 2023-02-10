@@ -1,10 +1,11 @@
 .header {
+  min-height: 100vh;
   padding-top: 22px;
   background-image: url("../images/mobile-bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   margin-bottom: 75px;
-  padding-bottom: 255px;
+  padding-bottom: 296px;
 
   @media (min-width: 1080px) {
     background-image: url("../images/deask-bg.jpg");
@@ -119,7 +120,7 @@
       position: absolute;
       width: 93px;
       height: 2px;
-      color: #78c081;
+      background-color: #78c081;
       left: 5px;
       top: 50%;
       transform: translateY(-50%);
