@@ -57,6 +57,8 @@
 
 .application__card-sticker {
   position: absolute;
+  display: flex;
+  align-items: center;
   width: 119px;
   height: 28px;
   background-color: #d9fadd;

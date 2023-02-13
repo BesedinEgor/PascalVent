@@ -1,0 +1,123 @@
+.steps {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.container--arrows-bg {
+  background-image: url("../images/svg/arrow-bg.svg");
+  background-repeat: no-repeat;
+  background-position: -20px 32px;
+}
+
+.steps__title-box {
+  margin-bottom: 25px;
+}
+
+.steps__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Ruberoid", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 38px;
+  color: var(--light-green);
+  text-transform: capitalize;
+
+  &--solid {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 62px;
+      height: 2px;
+      background-color: #78c081;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.steps__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 45px;
+}
+
+.steps__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  &--offset {
+    &:first-child {
+      margin-right: 85px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 50px;
+    }
+
+    &:last-child {
+      margin-right: 150px;
+    }
+  }
+}
+
+.steps__ellipse {
+  width: 100px;
+  height: 100px;
+  background-color: #d9fadd;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &.steps__bulb {
+    background-image: url("../images/svg/bulb.svg");
+  }
+
+  &.steps__checklist {
+    background-image: url("../images/svg/checklist.svg");
+  }
+
+  &.steps__cooler {
+    background-image: url("../images/svg/cooler.svg");
+  }
+}
+
+.steps__item-description {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--light-green);
+}
+
+.steps__title {
+  font-family: "Ruberoid", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 35px;
+  color: #78c081;
+  margin-bottom: 12px;
+}
+
+.steps__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.steps__element {
+  line-height: 26px;
+  color: #7ca381;
+  padding-left: 32px;
+  background-image: url("../images/svg/small-cooler.svg");
+  background-repeat: no-repeat;
+  background-position: left 3px;
+}
