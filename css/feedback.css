@@ -56,7 +56,7 @@
   text-transform: uppercase;
   color: var(--light-white);
 }
-.feedback__submit.disabled {
+.feedback__submit:disabled {
   box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36), 300px 0px 0px rgba(34, 111, 33, 0.36) inset;
 }
 
