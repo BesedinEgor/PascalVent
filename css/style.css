@@ -1160,4 +1160,57 @@ button {
   background-position: center bottom;
 }
 
+.portfolio__title-box {
+  margin-bottom: 25px;
+}
+
+.portfolio__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Ruberoid", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: var(--light-green);
+}
+
+.portfolio__content {
+  margin-bottom: 30px;
+}
+
+.portfolio__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #848484;
+}
+
+.portfolio__figure {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio__slide-sticker {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 49px;
+  background-color: #d9fadd;
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--light-green);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  left: 0;
+  top: 35px;
+}
+
 /*# sourceMappingURL=style.css.map */
