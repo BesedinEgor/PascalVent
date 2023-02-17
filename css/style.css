@@ -1160,6 +1160,14 @@ button {
   background-position: center bottom;
 }
 
+.portfolio {
+  padding-bottom: 70px;
+  background-image: url("../images/portfolio-ellipse-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 70px;
+}
+
 .portfolio__title-box {
   margin-bottom: 25px;
 }
@@ -1211,6 +1219,110 @@ button {
   border-bottom-right-radius: 15px;
   left: 0;
   top: 35px;
+}
+
+.portfolio__figcaption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  text-transform: capitalize;
+  bottom: 35px;
+  left: 30px;
+}
+
+.portfolio__caption {
+  margin: 0;
+  padding: 0;
+  font-family: "Ruberoid", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--light-white);
+}
+
+.portfolio__description {
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+  color: var(--light-white);
+}
+
+.portfolio-slide {
+  padding-bottom: 80px;
+}
+
+.portfolio__arrow-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 10;
+}
+
+.portfolio-prev,
+.portfolio-next {
+  position: static;
+  width: 46px;
+  height: 46px;
+}
+.portfolio-prev::after,
+.portfolio-next::after {
+  content: "";
+  width: 47px;
+  height: 47px;
+  background-image: url("../images/svg/arrow-next.svg");
+  background-repeat: no-repeat;
+}
+
+.portfolio-prev::after {
+  transform: rotate(180deg);
+}
+
+.customers {
+  margin-top: 55px;
+  background-color: #d9fadd;
+  background-image: url("../images/customers-wave.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.customers__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  font-family: "Ruberoid", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: var(--light-green);
+}
+
+.customers__content {
+  margin-bottom: 35px;
+}
+
+.customers__text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #848484;
+}
+
+.customers-swiper-slider {
+  padding-bottom: 76px;
+  margin: 0 auto;
+}
+.customers-swiper-slider img {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
