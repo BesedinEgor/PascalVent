@@ -10,7 +10,7 @@ const portfolioSwiper = new Swiper(".portfolio-swiper", {
 
 const customersSwiper = new Swiper(".customers-swiper", {
   loop: false,
-  slidesPerView: 1,
+  slidesPerView: 1.3,
   // Navigation arrows
   navigation: {
     nextEl: ".customers-next",

@@ -1,14 +1,15 @@
 .customers {
-  margin-top: 55px;
-  background-color: #d9fadd;
-  background-image: url("../images/customers-wave.png");
+  position: relative;
+  background-image: url("../images/svg/customes-waves.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  padding-bottom: 45px;
 }
 
 .customers__title {
   margin: 0;
   padding: 0;
+  padding-top: 50px;
   margin-bottom: 25px;
   font-family: "Ruberoid", sans-serif;
   font-weight: 600;
