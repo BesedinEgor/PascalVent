@@ -50,6 +50,19 @@ button {
   max-width: 350px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media (min-width: 640px) {
+    max-width: 610px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1200px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1170px;
+  }
 }
 
 .main {
@@ -75,7 +88,7 @@ button {
     border: 15px solid transparent;
     border-radius: 30px;
     box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36),
-      300px 0px 0px #5ccd6a inset;
+      100vw 0px 0px #5ccd6a inset;
     cursor: pointer;
   }
 }

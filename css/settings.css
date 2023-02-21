@@ -51,6 +51,22 @@ button {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media (min-width: 640px) {
+  .container {
+    max-width: 610px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 45px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1170px;
+  }
+}
 
 .main {
   flex-grow: 1;
@@ -74,7 +90,7 @@ button {
   background: rgba(120, 192, 129, 0.25);
   border: 15px solid transparent;
   border-radius: 30px;
-  box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36), 300px 0px 0px #5ccd6a inset;
+  box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36), 100vw 0px 0px #5ccd6a inset;
   cursor: pointer;
 }
 

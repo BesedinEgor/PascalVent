@@ -13,7 +13,7 @@
   transition: transform 0.5s;
   z-index: 1;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .nav {
     display: block;
     position: static;
@@ -36,7 +36,7 @@
   justify-content: center;
   gap: 20px;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .nav__items {
     flex-direction: row;
     gap: 40px;
@@ -52,6 +52,12 @@
 .nav__link {
   font-size: 20px;
   color: var(--light-green);
+}
+@media (min-width: 1024px) {
+  .nav__link {
+    font-size: inherit;
+    line-height: 18px;
+  }
 }
 
 /*# sourceMappingURL=nav.css.map */
