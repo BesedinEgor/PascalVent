@@ -4,6 +4,18 @@
   align-items: center;
   margin-bottom: 70px;
 }
+@media (min-width: 1024px) {
+  .services {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__description {
+    max-width: 400px;
+  }
+}
 
 .services__title {
   margin: 0;
@@ -46,13 +58,27 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: 1024px) {
+  .services__options {
+    position: relative;
+  }
+}
+
 .services__options-wrapper {
   background-color: #d9fadd;
   padding-bottom: 10px;
   border-radius: 50px;
 }
+@media (min-width: 1024px) {
+  .services__options-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+  }
+}
 
 .services__tabs {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,6 +86,19 @@
   min-width: 320px;
   margin: 0 auto;
   margin-bottom: 25px;
+}
+@media (min-width: 1024px) {
+  .services__tabs {
+    position: absolute;
+    min-width: 400px;
+    transform: rotate(-90deg);
+    padding-top: 10px;
+    left: -238px;
+    background-color: #d9fadd;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    margin-bottom: 0;
+  }
 }
 
 .services__btn {
@@ -96,8 +135,20 @@
   background-size: contain;
   padding-bottom: 160px;
 }
+@media (min-width: 640px) {
+  .services__options-content[id=content-1], .services__options-content[id=content-2] {
+    padding-bottom: 250px;
+  }
+}
 .services__options-content[id=content-1] {
   background-image: url("../images/services-img.png");
+}
+@media (min-width: 1024px) {
+  .services__options-content[id=content-1] {
+    background-image: url("../images/services-img-desk.png");
+    background-position-x: right;
+    background-size: 240px 655px;
+  }
 }
 .services__options-content[id=content-2] {
   background-image: url("../images/services-img1.png");
@@ -109,6 +160,11 @@
   gap: 20px;
   min-width: 270px;
   margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .services__list {
+    padding-top: 50px;
+  }
 }
 
 .services__item {
@@ -158,4 +214,6 @@
 }
 .services__item--icon66::before {
   background-image: url("../images/svg/services-item66.svg");
-}/*# sourceMappingURL=services.css.map */
+}
+
+/*# sourceMappingURL=services.css.map */
