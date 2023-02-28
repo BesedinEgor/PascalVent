@@ -652,6 +652,7 @@ button {
   .services {
     flex-direction: row;
     align-items: center;
+    gap: 50px;
   }
 }
 
@@ -705,6 +706,10 @@ button {
 @media (min-width: 1024px) {
   .services__options {
     position: relative;
+    background-image: url("../images/services-img-desk.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
   }
 }
 
@@ -717,7 +722,7 @@ button {
   .services__options-wrapper {
     display: flex;
     align-items: center;
-    max-width: 500px;
+    max-width: 450px;
   }
 }
 
@@ -737,7 +742,7 @@ button {
     min-width: 400px;
     transform: rotate(-90deg);
     padding-top: 10px;
-    left: -238px;
+    left: -233px;
     background-color: #d9fadd;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
@@ -755,6 +760,11 @@ button {
   box-shadow: inset -2px -2px 12px rgba(34, 111, 33, 0.3);
   cursor: pointer;
 }
+@media (min-width: 1024px) {
+  .services__btn {
+    padding: 20px 0;
+  }
+}
 .services__btn--active {
   background-color: var(--light-white);
   box-shadow: none;
@@ -770,8 +780,19 @@ button {
 .services__options-content {
   display: none;
 }
+@media (min-width: 1024px) {
+  .services__options-content {
+    height: 510px;
+    display: flex;
+  }
+}
 .services__options-content--active {
   display: block;
+}
+@media (min-width: 1024px) {
+  .services__options-content--active {
+    height: auto;
+  }
 }
 .services__options-content[id=content-1], .services__options-content[id=content-2] {
   background-repeat: no-repeat;
@@ -784,18 +805,44 @@ button {
     padding-bottom: 250px;
   }
 }
+@media (min-width: 1024px) {
+  .services__options-content[id=content-1], .services__options-content[id=content-2] {
+    padding-bottom: 0;
+  }
+}
 .services__options-content[id=content-1] {
   background-image: url("../images/services-img.png");
 }
 @media (min-width: 1024px) {
   .services__options-content[id=content-1] {
-    background-image: url("../images/services-img-desk.png");
-    background-position-x: right;
-    background-size: 240px 655px;
+    background-image: none;
   }
 }
 .services__options-content[id=content-2] {
   background-image: url("../images/services-img1.png");
+}
+@media (min-width: 1024px) {
+  .services__options-content[id=content-2] {
+    background-image: none;
+  }
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .services-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 300px;
+    padding-left: 20px;
+    margin-right: 280px;
+  }
 }
 
 .services__list {

@@ -7,6 +7,7 @@
   @media (min-width: 1024px) {
     flex-direction: row;
     align-items: center;
+    gap: 50px;
   }
 }
 
@@ -63,6 +64,10 @@
 .services__options {
   @media (min-width: 1024px) {
     position: relative;
+    background-image: url("../images/services-img-desk.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
   }
 }
 
@@ -74,7 +79,7 @@
   @media (min-width: 1024px) {
     display: flex;
     align-items: center;
-    max-width: 500px;
+    max-width: 450px;
   }
 }
 
@@ -93,7 +98,7 @@
     min-width: 400px;
     transform: rotate(-90deg);
     padding-top: 10px;
-    left: -238px;
+    left: -233px;
     background-color: #d9fadd;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
@@ -110,6 +115,10 @@
   color: var(--light-white);
   box-shadow: inset -2px -2px 12px rgba(34, 111, 33, 0.3);
   cursor: pointer;
+
+  @media (min-width: 1024px) {
+    padding: 20px 0;
+  }
 
   &--active {
     background-color: var(--light-white);
@@ -129,8 +138,17 @@
 .services__options-content {
   display: none;
 
+  @media (min-width: 1024px) {
+    height: 510px;
+    display: flex;
+  }
+
   &--active {
     display: block;
+
+    @media (min-width: 1024px) {
+      height: auto;
+    }
   }
 
   &[id="content-1"],
@@ -143,20 +161,44 @@
     @media (min-width: 640px) {
       padding-bottom: 250px;
     }
+
+    @media (min-width: 1024px) {
+      padding-bottom: 0;
+    }
   }
 
   &[id="content-1"] {
     background-image: url("../images/services-img.png");
 
     @media (min-width: 1024px) {
-      background-image: url("../images/services-img-desk.png");
-      background-position-x: right;
-      background-size: 240px 655px;
+      background-image: none;
     }
   }
 
   &[id="content-2"] {
     background-image: url("../images/services-img1.png");
+
+    @media (min-width: 1024px) {
+      background-image: none;
+    }
+  }
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-wrapper {
+  @media (min-width: 1024px) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 300px;
+    padding-left: 20px;
+    margin-right: 280px;
   }
 }
 
