@@ -16,6 +16,11 @@
     margin-bottom: 65px;
     padding-bottom: 65px;
   }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 100px;
+    padding-bottom: 65px;
+  }
 }
 
 .header__container {

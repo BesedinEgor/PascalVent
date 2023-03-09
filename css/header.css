@@ -19,6 +19,12 @@
     padding-bottom: 65px;
   }
 }
+@media (min-width: 1440px) {
+  .header {
+    margin-bottom: 100px;
+    padding-bottom: 65px;
+  }
+}
 
 .header__container {
   display: flex;
