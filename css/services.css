@@ -122,19 +122,6 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .services__options-content {
-    width: 600px;
-    height: 600px;
-  }
-}
-@media (min-width: 1440px) {
-  .services__options-content {
-    width: 676px;
-    height: 655px;
-  }
-}
-
 .services__tabs {
   position: relative;
   display: flex;
@@ -241,6 +228,8 @@
 }
 @media (min-width: 1024px) {
   .services__options-content[id=content-1], .services__options-content[id=content-2] {
+    width: 600px;
+    height: 600px;
     padding-bottom: 0;
     background-position: center right;
     background-size: 200px 615px;
@@ -248,6 +237,8 @@
 }
 @media (min-width: 1440px) {
   .services__options-content[id=content-1], .services__options-content[id=content-2] {
+    width: 676px;
+    height: 655px;
     background-position: 440px -8px;
     background-size: 240px 675px;
   }

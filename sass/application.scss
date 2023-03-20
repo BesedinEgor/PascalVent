@@ -4,11 +4,31 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 125px;
-  margin-bottom: 37px;
+
+  @media (min-width: 1024px) {
+    background-image: url("../images/application-bg-desk.png");
+    background-position-y: 5px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 57px;
+  }
 }
 
 .application__title-box {
   padding-bottom: 56px;
+
+  @media (min-width: 1024px) {
+    max-width: 635px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1020px;
+    padding-bottom: 85px;
+  }
 }
 
 .application__text {
@@ -20,6 +40,11 @@
   line-height: 38px;
   color: var(--light-green);
   text-transform: capitalize;
+
+  @media (min-width: 1440px) {
+    font-size: 45px;
+    line-height: 60px;
+  }
 
   &--solid {
     position: relative;
@@ -34,6 +59,19 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+
+      @media (min-width: 1024px) {
+        width: 186px;
+        bottom: -20px;
+        left: 10px;
+        transform: none;
+        top: auto;
+      }
+
+      @media (min-width: 1440px) {
+        width: 335px;
+        bottom: -36px;
+      }
     }
   }
 }
@@ -43,6 +81,23 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 15px;
   padding-bottom: 33px;
+
+  @media (min-width: 640px) {
+    gap: 30px 40px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 210px);
+    justify-items: center;
+    justify-content: space-between;
+    gap: 25px 30px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(4, 257px);
+    gap: 37px 45px;
+  }
 }
 
 .application__card {
@@ -70,6 +125,24 @@
   border-bottom-right-radius: 10px;
   left: 0;
   top: 20px;
+
+  @media (min-width: 640px) {
+    top: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 15px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 20px;
+  }
+}
+
+.application__card-photo {
+  @media (min-width: 640px) {
+    width: auto;
+  }
 }
 
 .application__card-description {
@@ -82,6 +155,12 @@
   background-color: var(--light-white);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
+  @media (min-width: 1024px) {
+    justify-content: flex-start;
+    padding: 10px;
+    min-height: 58px;
+  }
 }
 
 .application__card-text {
@@ -92,4 +171,9 @@
   font-size: 14px;
   line-height: 19px;
   color: #78c081;
+
+  @media (min-width: 1024px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
