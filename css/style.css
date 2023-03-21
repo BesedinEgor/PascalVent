@@ -106,7 +106,7 @@ button {
 }
 @media (min-width: 1440px) {
   .container {
-    max-width: 1170px;
+    max-width: 1260px;
   }
 }
 
@@ -1226,7 +1226,8 @@ button {
 }
 @media (min-width: 1440px) {
   .steps {
-    padding-bottom: 250px;
+    padding-bottom: 120px;
+    background-size: 75%;
   }
 }
 
@@ -1694,9 +1695,33 @@ button {
   margin-bottom: 70px;
 }
 
+@media (min-width: 1024px) {
+  .container-skills {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .container-skills {
+    gap: 100px;
+  }
+}
+
 .skills__box-content {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .skills__box-content {
+    width: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .skills__box-content {
+    width: 505px;
+  }
 }
 
 .skills__title-box {
@@ -1716,6 +1741,12 @@ button {
   line-height: 38px;
   text-transform: capitalize;
   color: var(--light-green);
+}
+@media (min-width: 1024px) {
+  .skills__title {
+    font-size: 45px;
+    line-height: 60px;
+  }
 }
 
 .skills__items {
@@ -1770,6 +1801,11 @@ button {
   left: 4px;
   top: 9px;
 }
+@media (min-width: 1024px) {
+  .skills__text {
+    line-height: 19px;
+  }
+}
 
 .skills__description {
   margin: 0;
@@ -1792,6 +1828,22 @@ button {
 }
 .skills__feedback:hover.button--style {
   box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36), 300px 0px 0px #54e165 inset;
+}
+
+.skills__box-images {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .skills__box-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-image: url("../images/svg/skills-ellipse-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+  }
 }
 
 .schematic {
