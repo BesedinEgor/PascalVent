@@ -1,6 +1,13 @@
 .feedback {
   background-color: #d9fadd;
   padding: 35px 0;
+
+  @media (min-width: 1024px) {
+    background-image: url("../images/svg/form-fan-desk.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 .feedback__title {
@@ -13,6 +20,22 @@
   color: var(--light-green);
   text-align: left;
   padding-bottom: 30px;
+
+  @media (min-width: 1024px) {
+    font-size: 35px;
+  }
+}
+
+.feedback__form {
+  @media (min-width: 640px) {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1024px) {
+    width: 900px;
+    margin: 0;
+  }
 }
 
 .feedback__fieldset {
@@ -25,11 +48,27 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+  }
 }
 
 .feedback__item {
+  &:not(:last-child) {
+    @media (min-width: 1024px) {
+      margin-right: 30px;
+    }
+  }
+
   &:nth-child(2) {
     margin-bottom: 25px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -47,6 +86,10 @@
     line-height: 17px;
     color: rgba(124, 163, 129, 0.7);
   }
+
+  @media (min-width: 1024px) {
+    min-width: 290px;
+  }
 }
 
 .feedback__submit {
@@ -61,5 +104,14 @@
   &:disabled {
     box-shadow: inset 2px -2px 12px rgb(34 111 33 / 36%),
       300px 0px 0px rgba(34, 111, 33, 0.36) inset;
+
+    @media (min-width: 640px) {
+      box-shadow: inset 2px -2px 12px rgb(34 111 33 / 36%),
+        600px 0px 0px rgba(34, 111, 33, 0.36) inset;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    width: 229px;
   }
 }

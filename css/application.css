@@ -65,6 +65,11 @@
   top: 50%;
   transform: translateY(-50%);
 }
+@media (min-width: 640px) {
+  .application__text--solid::before {
+    left: 205px;
+  }
+}
 @media (min-width: 1024px) {
   .application__text--solid::before {
     width: 186px;
@@ -116,6 +121,7 @@
   margin: 0;
   padding: 0;
   filter: drop-shadow(0px 0px 10px rgba(73, 93, 76, 0.1));
+  cursor: pointer;
 }
 
 .application__card-sticker {

@@ -5,6 +5,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center -300px;
+
+  @media (min-width: 1024px) {
+    background-position: -400px;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: -400px -500px;
+  }
+}
+
+.container-bg {
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-around;
+  }
 }
 
 .about__wrapper {
@@ -15,11 +32,23 @@
   border-radius: 50px;
   padding-top: 35px;
   margin-bottom: 32px;
+
+  @media (min-width: 1024px) {
+    width: 400px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 531px;
+  }
 }
 
 .about__container {
   max-width: 320px;
   padding: 0 25px;
+
+  @media (min-width: 640px) {
+    max-width: 610px;
+  }
 }
 
 .about__title-box {
@@ -51,7 +80,20 @@
       top: 50%;
       transform: translateY(-50%);
       left: 100px;
+
+      @media (min-width: 1440px) {
+        width: 166px;
+        height: 26px;
+        font-size: 21px;
+        line-height: 27px;
+        left: 160px;
+      }
     }
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 45px;
+    line-height: 60px;
   }
 }
 
@@ -60,6 +102,10 @@
   flex-direction: column;
   gap: 40px;
   padding-bottom: 25px;
+
+  @media (min-width: 640px) {
+    gap: 30px;
+  }
 }
 
 .about__text {
@@ -69,12 +115,28 @@
   font-size: 14px;
   line-height: 24px;
   color: #848484;
+
+  @media (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .about__items {
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media (min-width: 640px) {
+    gap: 0;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    gap: 50px;
+  }
 }
 
 .about__item {
@@ -112,11 +174,25 @@
   color: #78c081;
   margin-bottom: 15px;
 
+  @media (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
   span {
     font-family: "Ruberoid", sans-serif;
     font-weight: 600;
     font-size: 35px;
     line-height: 47px;
+
+    @media (min-width: 1024px) {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    @media (min-width: 1440px) {
+      line-height: 47px;
+    }
   }
 }
 
