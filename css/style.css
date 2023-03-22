@@ -1853,6 +1853,21 @@ button {
 .schematic__title-box {
   margin-bottom: 25px;
 }
+@media (min-width: 1024px) {
+  .schematic__title-box {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .schematic__content {
+    background-image: url("../images/svg/vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    z-index: -1;
+  }
+}
 
 .schematic__title {
   margin: 0;
@@ -1864,6 +1879,12 @@ button {
   text-transform: capitalize;
   color: var(--light-green);
 }
+@media (min-width: 1440px) {
+  .schematic__title {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
 
 .schematic__items {
   display: flex;
@@ -1873,18 +1894,48 @@ button {
   margin-bottom: 30px;
   gap: 30px;
 }
+@media (min-width: 1024px) {
+  .schematic__items {
+    gap: 50px;
+    margin-bottom: 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .schematic__items {
+    gap: 70px;
+    margin-bottom: 100px;
+  }
+}
 
 .schematic__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 252px;
-  margin-right: auto;
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media (min-width: 640px) {
+  .schematic__item {
+    width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .schematic__item {
+    width: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .schematic__item {
+    width: 525px;
+  }
+}
+.schematic__item:nth-child(odd) {
+  margin-right: auto;
+}
 .schematic__item:nth-child(2n) {
   align-items: flex-end;
-  max-width: 292px;
+  margin-left: auto;
 }
 .schematic__item:nth-child(2n) .schematic__description {
   text-align: right;
@@ -1893,25 +1944,107 @@ button {
   background-image: url("../images/svg/mail.svg");
   background-position-x: right;
 }
+@media (min-width: 1024px) {
+  .schematic__item--img1::before {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 219px;
+    background-image: url("../images/svg/mail-desk.svg");
+    right: 50px;
+    top: -80px;
+    z-index: -1;
+  }
+}
 .schematic__item--img2 {
   background-image: url("../images/svg/bulb-schematic.svg");
   background-position-x: left;
+}
+@media (min-width: 1024px) {
+  .schematic__item--img2::before {
+    content: "";
+    position: absolute;
+    width: 279px;
+    height: 246px;
+    top: -90px;
+    left: 10px;
+    background-image: url("../images/svg/balb-schematic-desk.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 .schematic__item--img3 {
   background-image: url("../images/svg/home.svg");
   background-position-x: right;
 }
+@media (min-width: 1024px) {
+  .schematic__item--img3::before {
+    content: "";
+    position: absolute;
+    width: 413px;
+    height: 254px;
+    right: -72px;
+    top: -80px;
+    background-image: url("../images/svg/home-desk.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
 .schematic__item--img4 {
   background-image: url("../images/svg/graphic.svg");
   background-position-x: left;
+}
+@media (min-width: 1024px) {
+  .schematic__item--img4::before {
+    content: "";
+    position: absolute;
+    width: 288px;
+    height: 274px;
+    top: -75px;
+    left: -30px;
+    background-image: url("../images/svg/graphic-desk.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 .schematic__item--img5 {
   background-image: url("../images/svg/contract.svg");
   background-position-x: right;
 }
+@media (min-width: 1024px) {
+  .schematic__item--img5::before {
+    content: "";
+    position: absolute;
+    width: 275px;
+    height: 282px;
+    right: 60px;
+    top: -80px;
+    background-image: url("../images/svg/contract-desk.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
 .schematic__item--img6 {
   background-image: url("../images/svg/car.svg");
   background-position-x: left;
+}
+@media (min-width: 1024px) {
+  .schematic__item--img6::before {
+    content: "";
+    position: absolute;
+    width: 301px;
+    height: 189px;
+    top: -65px;
+    left: -60px;
+    background-image: url("../images/svg/car-desk.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+@media (min-width: 1024px) {
+  .schematic__item--img1, .schematic__item--img2, .schematic__item--img3, .schematic__item--img4, .schematic__item--img5, .schematic__item--img6 {
+    background-image: none;
+  }
 }
 
 .schematic__caption,
@@ -1926,6 +2059,13 @@ button {
   line-height: 32px;
   color: #78c081;
 }
+@media (min-width: 1440px) {
+  .schematic__caption,
+  .schematic__final {
+    font-size: 35px;
+    line-height: 47px;
+  }
+}
 
 .schematic__description {
   margin: 0;
@@ -1933,6 +2073,12 @@ button {
   font-size: 14px;
   line-height: 24px;
   color: var(--light-green);
+}
+@media (min-width: 1440px) {
+  .schematic__description {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .schematic__final {
