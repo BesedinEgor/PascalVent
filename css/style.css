@@ -2184,6 +2184,12 @@ button {
 .portfolio-slide {
   padding-bottom: 80px;
 }
+@media (min-width: 640px) {
+  .portfolio-slide {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .portfolio__arrow-box {
   position: absolute;

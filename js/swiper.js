@@ -6,6 +6,14 @@ const portfolioSwiper = new Swiper(".portfolio-swiper", {
     nextEl: ".portfolio-next",
     prevEl: ".portfolio-prev",
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 const customersSwiper = new Swiper(".customers-swiper", {
