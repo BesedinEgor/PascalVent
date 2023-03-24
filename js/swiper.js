@@ -24,4 +24,15 @@ const customersSwiper = new Swiper(".customers-swiper", {
     nextEl: ".customers-next",
     prevEl: ".customers-prev",
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 2.3,
+    },
+  },
 });

@@ -9,9 +9,28 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: 1024px) {
+  .container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .footer__contacts {
   padding-bottom: 20px;
   border-bottom: 1px solid #bee1c2;
+}
+@media (min-width: 1024px) {
+  .footer__contacts {
+    width: 222px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-bottom: none;
+    order: 2;
+  }
 }
 
 .footer__contacts-title {
@@ -30,6 +49,12 @@
   grid-template-columns: 1fr 1fr;
   gap: 5px;
 }
+@media (min-width: 1024px) {
+  .footer__contacts-items {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .footer__contacts-item {
   position: relative;
@@ -39,8 +64,18 @@
   line-height: 20px;
   color: #7b897d;
 }
+@media (min-width: 1024px) {
+  .footer__contacts-item {
+    padding: 10px 29px;
+  }
+}
 .footer__contacts-item--phone {
   order: 1;
+}
+@media (min-width: 1024px) {
+  .footer__contacts-item--phone {
+    border-bottom: 1px solid #bee1c2;
+  }
 }
 .footer__contacts-item--phone::before {
   content: "";
@@ -55,8 +90,19 @@
 .footer__contacts-item--order {
   order: 3;
 }
+@media (min-width: 1024px) {
+  .footer__contacts-item--order {
+    order: 2;
+  }
+}
 .footer__contacts-item--mail {
   order: 6;
+}
+@media (min-width: 1024px) {
+  .footer__contacts-item--mail {
+    order: 3;
+    border-bottom: 1px solid #bee1c2;
+  }
 }
 .footer__contacts-item--mail::before {
   content: "";
@@ -72,6 +118,11 @@
 }
 .footer__contacts-item--calendar {
   order: 2;
+}
+@media (min-width: 1024px) {
+  .footer__contacts-item--calendar {
+    order: 4;
+  }
 }
 .footer__contacts-item--calendar::before {
   content: "";
@@ -97,13 +148,28 @@
   left: 0;
 }
 
+.footer__form {
+  width: 290px;
+}
+
 .footer__contacts-link {
   color: #7b897d;
   line-height: 16px;
 }
 
+@media (min-width: 1024px) {
+  .footer__feedback {
+    order: 3;
+  }
+}
+
 .footer-feedback__title {
   padding-top: 30px;
+}
+@media (min-width: 1024px) {
+  .footer-feedback__title {
+    width: 290px;
+  }
 }
 
 .footer-feedback__submit {
@@ -135,6 +201,28 @@
   font-size: 18px;
   line-height: 24px;
   color: #78c081;
+}
+
+@media (min-width: 1024px) {
+  .footer__items {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__item.feedback__item {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__description {
+    order: 1;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

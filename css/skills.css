@@ -49,7 +49,7 @@
   text-transform: capitalize;
   color: var(--light-green);
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .skills__title {
     font-size: 45px;
     line-height: 60px;

@@ -22,7 +22,7 @@
   text-align: left;
   padding-bottom: 30px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .feedback__title {
     font-size: 35px;
   }

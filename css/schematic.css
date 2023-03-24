@@ -16,6 +16,7 @@
     background-image: url("../images/svg/vector.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-position: 215px 150px;
     background-size: 70%;
     z-index: -1;
   }

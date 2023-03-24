@@ -1,9 +1,26 @@
 .portfolio {
+  position: relative;
   padding-bottom: 70px;
-  background-image: url("../images/portfolio-ellipse-bg.png");
+}
+.portfolio::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/svg/portfolio-ellipse-bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 70px;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 1024px) {
+  .container-portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio__title-box {
@@ -20,9 +37,38 @@
   text-transform: capitalize;
   color: var(--light-green);
 }
+@media (min-width: 1024px) {
+  .portfolio__title {
+    width: 330px;
+  }
+}
+@media (min-width: 1440px) {
+  .portfolio__title {
+    width: 394px;
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
 
 .portfolio__content {
   margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .portfolio__content {
+    width: 600px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .portfolio__content {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-swiper {
+    padding-top: 70px;
+  }
 }
 
 .portfolio__text {
@@ -39,6 +85,16 @@
   position: relative;
   margin: 0;
   padding: 0;
+}
+@media (min-width: 640px) {
+  .portfolio__figure {
+    width: 250px;
+  }
+}
+@media (min-width: 1440px) {
+  .portfolio__figure {
+    width: 100%;
+  }
 }
 
 .portfolio__slide-sticker {
@@ -68,6 +124,17 @@
   text-transform: capitalize;
   bottom: 35px;
   left: 30px;
+}
+@media (min-width: 640px) {
+  .portfolio__figcaption {
+    max-width: 215px;
+    left: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio__figcaption {
+    bottom: 100px;
+  }
 }
 
 .portfolio__caption {
@@ -107,6 +174,14 @@
   transform: translateX(-50%);
   bottom: 0;
   z-index: 10;
+}
+@media (min-width: 1024px) {
+  .portfolio__arrow-box {
+    transform: none;
+    left: 30px;
+    top: 25px;
+    bottom: auto;
+  }
 }
 
 .portfolio-prev,
