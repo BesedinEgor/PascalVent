@@ -59,5 +59,10 @@
     line-height: 18px;
   }
 }
+@media (min-width: 1440px) {
+  .nav__link {
+    font-size: 20px;
+  }
+}
 
 /*# sourceMappingURL=nav.css.map */
