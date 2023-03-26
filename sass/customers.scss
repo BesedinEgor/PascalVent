@@ -30,6 +30,10 @@
   text-transform: capitalize;
   color: var(--light-green);
 
+  @media (min-width: 1024px) {
+    padding-top: 100px;
+  }
+
   @media (min-width: 1440px) {
     font-size: 45px;
     line-height: 60px;

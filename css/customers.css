@@ -31,6 +31,11 @@
   text-transform: capitalize;
   color: var(--light-green);
 }
+@media (min-width: 1024px) {
+  .customers__title {
+    padding-top: 100px;
+  }
+}
 @media (min-width: 1440px) {
   .customers__title {
     font-size: 45px;

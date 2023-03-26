@@ -50,13 +50,12 @@
 @media (min-width: 1024px) {
   .schematic__items {
     gap: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 1440px) {
   .schematic__items {
     gap: 70px;
-    margin-bottom: 100px;
   }
 }
 

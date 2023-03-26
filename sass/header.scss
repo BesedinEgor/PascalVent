@@ -131,11 +131,19 @@
     line-height: 20px;
     letter-spacing: 2px;
     color: var(--light-white);
+    transition: all .3s ease;
 
     &.button--style {
       border: 10px solid transparent;
       border-radius: 25px;
       background: rgba(255, 255, 255, 0.45);
+    }
+
+    &:hover {
+      &.button--style {
+        box-shadow: inset 2px -2px 12px rgb(34 111 33 / 36%),
+          900px 0px 0px #54e165 inset;
+      }
     }
   }
 

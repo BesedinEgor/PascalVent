@@ -47,3 +47,23 @@ function openContent(evt) {
     .querySelector(`#${button}`)
     .classList.add("services__options-content--active");
 }
+
+//активация кнопки формы при заполненных полях ввода
+const inputs = [].slice.call(document.querySelectorAll('input[type="text"], input[type="tel"]')),
+button = document.querySelector('.feedback__submit'), footerButton = document.querySelector('.footer-feedback__submit') ;
+
+inputs.forEach(function(el){
+  el.addEventListener('input', checkInputs, false);
+});
+console.log(inputs)
+console.log(button)
+function checkInputs(){
+	const empty = inputs.filter(function(el){
+    return el.value.trim() === '';
+  }).length;
+  console.log(empty)
+  
+  button.disabled = empty !==2;
+  footerButton.disabled = empty !==2;
+}
+checkInputs();

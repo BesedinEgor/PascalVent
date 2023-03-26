@@ -47,6 +47,13 @@
   font-size: 15px;
   text-transform: lowercase;
   color: var(--light-green);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+@media (min-width: 1024px) {
+  .nav__item:hover {
+    border-color: #78c081;
+  }
 }
 
 .nav__link {

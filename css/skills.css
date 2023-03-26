@@ -134,7 +134,7 @@
   transition: all 0.3s ease;
 }
 .skills__feedback:hover.button--style {
-  box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36), 300px 0px 0px #54e165 inset;
+  box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36), 900px 0px 0px #54e165 inset;
 }
 
 .skills__box-images {

@@ -151,9 +151,8 @@
   padding: 24px 0px;
   font-size: 14px;
   line-height: 17px;
-  background-color: #5ccd6a;
-  color: var(--light-white);
-  box-shadow: inset -2px -2px 12px rgba(34, 111, 33, 0.3);
+  background-color: var(--light-white);
+  color: #7ca281;
   cursor: pointer;
 
   @media (min-width: 1024px) {
@@ -164,7 +163,7 @@
     &[data-button="content-1"]::before {
       content: "";
       position: absolute;
-      background-image: url("../images/svg/white-condition.svg");
+      background-image: url("../images/svg/condition.svg");
 
       background-size: 33px 27px;
       width: 33px;
@@ -177,7 +176,7 @@
     &[data-button="content-2"]::before {
       content: "";
       position: absolute;
-      background-image: url("../images/svg/fan.svg");
+      background-image: url("../images/svg/green-fan.svg");
       width: 33px;
       height: 33px;
       right: 15px;
@@ -186,17 +185,19 @@
   }
 
   &--active {
-    background-color: var(--light-white);
+    background-color: #5ccd6a;
     box-shadow: none;
-    color: #7ca281;
+    color: var(--light-white);
+    box-shadow: inset -2px -2px 12px rgba(34, 111, 33, 0.3);
+    cursor: pointer;
 
     @media (min-width: 1024px) {
       &[data-button="content-1"]::before {
-        background-image: url("../images/svg/condition.svg");
+        background-image: url("../images/svg/white-condition.svg");
       }
 
       &[data-button="content-2"]::before {
-        background-image: url("../images/svg/green-fan.svg");
+        background-image: url("../images/svg/fan.svg");
       }
     }
   }
@@ -245,18 +246,18 @@
   }
 
   &[id="content-1"] {
-    background-image: url("../images/services-img.png");
-
-    @media (min-width: 1024px) {
-      background-image: url("../images/services-img-desk.png");
-    }
-  }
-
-  &[id="content-2"] {
     background-image: url("../images/services-img1.png");
 
     @media (min-width: 1024px) {
       background-image: url("../images/services-img1-desk.png");
+    }
+  }
+
+  &[id="content-2"] {
+    background-image: url("../images/services-img.png");
+
+    @media (min-width: 1024px) {
+      background-image: url("../images/services-img-desk.png");
     }
   }
 }

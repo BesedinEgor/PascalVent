@@ -17,18 +17,23 @@
     background-size: 75%;
   }
 }
+@media (min-width: 1800px) {
+  .steps {
+    background-size: 50%;
+  }
+}
 
 .steps__title-box {
-  margin-bottom: 25px;
-  padding-bottom: 550px;
+  padding-bottom: 520px;
   background-image: url("../images/arrow-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center 37px;
+  background-position: center 60px;
 }
 @media (min-width: 640px) {
   .steps__title-box {
     margin-bottom: 50px;
+    background-position: center 35px;
   }
 }
 @media (min-width: 1024px) {

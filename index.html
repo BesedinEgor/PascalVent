@@ -285,19 +285,19 @@
           <div class="services__options">
             <div class="services__options-wrapper">
               <div class="services__tabs">
-                <button
-                  class="services__btn services__btn--active"
-                  data-button="content-1"
-                >
+                <button class="services__btn" data-button="content-1">
                   Кондиционирование
                 </button>
-                <button class="services__btn" data-button="content-2">
+                <button
+                  class="services__btn services__btn--active"
+                  data-button="content-2"
+                >
                   Система Вентиляции
                 </button>
               </div>
               <div
                 class="services__options-content services__options-content--active"
-                id="content-1"
+                id="content-2"
               >
                 <div class="container services-wrapper">
                   <ul class="services__list list-reset">
@@ -322,7 +322,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="services__options-content" id="content-2">
+              <div class="services__options-content" id="content-1">
                 <div class="container services-wrapper">
                   <ul class="services__list list-reset">
                     <li class="services__item services__item--icon1">
@@ -568,7 +568,8 @@
                       type="text"
                       name="name"
                       id="name"
-                      placeholder="Ваше Имя"
+                      placeholder="Ваше Имя*"
+                      required
                     />
                   </li>
                   <li class="feedback__item">
@@ -577,8 +578,14 @@
                       type="tel"
                       name="phone"
                       id="phone"
-                      placeholder="Номер телефона"
+                      pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                      placeholder="Номер телефона*"
+                      minlength="18"
+                      maxlength="18"
                     />
+                    <span class="feedback-form__error"
+                      >Необходимый формат поля +7 123 456-78-90</span
+                    >
                   </li>
                   <li class="feedback__item">
                     <button
@@ -1848,7 +1855,7 @@
                       type="text"
                       name="name"
                       id="name"
-                      placeholder="Ваше Имя"
+                      placeholder="Ваше Имя*"
                     />
                   </li>
                   <li class="feedback__item footer__item">
@@ -1857,8 +1864,14 @@
                       type="tel"
                       name="phone"
                       id="phone"
-                      placeholder="Номер телефона"
+                      placeholder="Номер телефона*"
+                      pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                      minlength="18"
+                      maxlength="18"
                     />
+                    <span class="feedback-form__error"
+                      >Необходимый формат поля +7 123 456-78-90</span
+                    >
                   </li>
                   <li class="feedback__item footer__item">
                     <button
