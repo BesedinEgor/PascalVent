@@ -55,14 +55,12 @@ button = document.querySelector('.feedback__submit'), footerButton = document.qu
 inputs.forEach(function(el){
   el.addEventListener('input', checkInputs, false);
 });
-console.log(inputs)
-console.log(button)
+
 function checkInputs(){
 	const empty = inputs.filter(function(el){
     return el.value.trim() === '';
-  }).length;
-  console.log(empty)
-  
+  }).length; 
+
   button.disabled = empty !==2;
   footerButton.disabled = empty !==2;
 }

@@ -45,6 +45,7 @@
 
 .nav__item {
   font-size: 15px;
+  font-weight: 600;
   text-transform: lowercase;
   color: var(--light-green);
   border-bottom: 2px solid transparent;

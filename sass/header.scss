@@ -13,6 +13,7 @@
   }
 
   @media (min-width: 1024px) {
+    padding-top: 0;
     margin-bottom: 65px;
     padding-bottom: 65px;
   }
@@ -20,6 +21,25 @@
   @media (min-width: 1440px) {
     margin-bottom: 100px;
     padding-bottom: 65px;
+  }
+}
+
+.header--fixed {
+  @media (min-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    background-color: #D9FADD;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 0px 15px -9px #000000;
+    transition: all .2s ease;
+  }
+
+  & .header__btn.button--style {
+    background: rgba(120, 192, 129, 0.25);
   }
 }
 
@@ -36,10 +56,9 @@
   }
 
   @media (min-width: 1024px) {
-    padding: 0 15px;
+    padding: 20px 15px;
     max-width: 100%;
     margin: 0 auto;
-    margin-bottom: 80px;
   }
 
   @media (min-width: 1440px) {
@@ -114,7 +133,7 @@
   }
 
   @media (min-width: 1024px) {
-    width: 196px;
+    width: 180px;
     height: 61px;
   }
 }
@@ -168,6 +187,10 @@
   @media (min-width: 640px) {
     align-items: flex-start;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: 640px) {
+    padding-top: 150px;
   }
 }
 

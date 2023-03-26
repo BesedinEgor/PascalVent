@@ -164,7 +164,6 @@
       content: "";
       position: absolute;
       background-image: url("../images/svg/condition.svg");
-
       background-size: 33px 27px;
       width: 33px;
       height: 27px;
@@ -181,6 +180,20 @@
       height: 33px;
       right: 15px;
       top: 18px;
+    }
+
+    &:not(.services__btn--active) {
+      &:hover {
+        color: #54e165;
+
+        &[data-button="content-1"]::before {
+          background-image: url("../images/svg/salat-condition.svg");
+        }
+
+        &[data-button="content-2"]::before {
+          background-image: url("../images/svg/salat-fan.svg");
+        }
+      }
     }
   }
 

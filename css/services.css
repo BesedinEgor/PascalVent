@@ -187,6 +187,15 @@
     right: 15px;
     top: 18px;
   }
+  .services__btn:not(.services__btn--active):hover {
+    color: #54e165;
+  }
+  .services__btn:not(.services__btn--active):hover[data-button=content-1]::before {
+    background-image: url("../images/svg/salat-condition.svg");
+  }
+  .services__btn:not(.services__btn--active):hover[data-button=content-2]::before {
+    background-image: url("../images/svg/salat-fan.svg");
+  }
 }
 .services__btn--active {
   background-color: #5ccd6a;
