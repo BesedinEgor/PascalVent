@@ -65,3 +65,37 @@ function checkInputs(){
   footerButton.disabled = empty !==2;
 }
 checkInputs();
+
+//закрытие/открытие поп-ап "Связаться"
+const openPopUp = document.getElementById('popup-open');
+const closePopUp = document.getElementById('pop-up-close');
+const popUp = document.getElementById('pop-up');
+const body = document.querySelector('body');
+
+openPopUp.addEventListener('click', (e) => {
+  e.preventDefault();
+  popUp.classList.add('popup--active')
+  body.style.overflowY = 'hidden';
+})
+
+closePopUp.addEventListener('click', () => {
+  popUp.classList.remove('popup--active')
+  body.style.overflowY = 'visible';
+})
+
+//закрытие/открытие поп-ап "Оставить заявку"
+
+const openPopupFeedback = document.querySelector('.header__application');
+const closePopupFeedback  = document.querySelector('.popup-feedback__close');
+const popup = document.querySelector('.popup-feedback');
+
+openPopupFeedback.addEventListener('click', (e) => {
+  e.preventDefault();
+  popup.classList.add('popup-feedback--active')
+  body.style.overflowY = 'hidden';
+})
+
+closePopupFeedback.addEventListener('click', () => {
+  popup.classList.remove('popup-feedback--active')
+  body.style.overflowY = 'visible';
+})

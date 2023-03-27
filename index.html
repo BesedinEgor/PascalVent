@@ -226,7 +226,9 @@
               </li>
             </ul>
           </nav>
-          <button class="header__btn button button--style">Связаться</button>
+          <button class="header__btn button button--style" id="popup-open">
+            Связаться
+          </button>
         </div>
         <div class="container">
           <div class="header__box-title">
@@ -1900,6 +1902,90 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="popup" id="pop-up">
+      <div class="popup__container">
+        <div class="popup__main" id="pop-up-main">
+          <h2 class="popup__title popup__title--solid">Быстрая связь с нами</h2>
+          <div class="popup__content">
+            <p class="popup__text">
+              Вы можете набрать нам, и менеджеры Pascal Vent с радостью
+              проконсультирует Вас по любому вопросу и помогут определиться с
+              выбором.
+            </p>
+            <p class="popup__feedback">График приема звонков:</p>
+            <span class="popup__day">ПН-СБ с 9:00 до 19:00</span>
+            <ul class="popup__phone-list list-reset">
+              <li class="popup__item">
+                <a class="popup__link-phone" href="tel:+74923736331"
+                  >+ 7 492 373 63 31</a
+                >
+              </li>
+              <li class="popup__item">
+                <a class="popup__link-phone" href="tel:+74243678929"
+                  >+ 7 424 367 89 29</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button class="popup__close button--style" id="pop-up-close"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-feedback popup">
+      <div class="popup-feedback__container popup__container">
+        <div class="popup-feedback__main popup__main">
+          <h2 class="popup-feedback__title popup__title popup__title--solid">
+            мы свяжемся с вами
+          </h2>
+          <div class="popup-feedback__content popup__content">
+            <form class="feedback__form footer__form">
+              <fieldset class="feedback__fieldset">
+                <legend class="visually-hidden">Форма обратной связи</legend>
+                <ul class="feedback__items footer__items list-reset">
+                  <li class="feedback__item footer__item">
+                    <input
+                      class="feedback__input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Ваше Имя*"
+                    />
+                  </li>
+                  <li class="feedback__item footer__item">
+                    <input
+                      class="feedback__input"
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      placeholder="Номер телефона*"
+                      pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                      minlength="18"
+                      maxlength="18"
+                    />
+                    <span class="feedback-form__error"
+                      >Необходимый формат поля +7 123 456-78-90</span
+                    >
+                  </li>
+                  <li class="feedback__item footer__item">
+                    <button
+                      class="feedback__submit footer-feedback__submit button button--style"
+                      type="submit"
+                      disabled
+                    >
+                      отправить
+                    </button>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+          </div>
+          <button
+            class="popup-feedback__close popup__close button--style"
+          ></button>
+        </div>
+      </div>
     </div>
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/swiper.js"></script>

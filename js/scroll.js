@@ -7,7 +7,6 @@ const firstHeight = first.offsetHeight;
 
 window.addEventListener('scroll', () => {
   let scrollDistance = window.scrollY;
-  console.log(scrollDistance)
 
   if(scrollDistance >= 918) {
     headerNav.classList.add('header--fixed');
