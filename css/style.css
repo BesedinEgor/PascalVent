@@ -656,8 +656,8 @@ button {
 
 .nav__item {
   font-size: 15px;
-  font-weight: 600;
-  text-transform: lowercase;
+  font-weight: 400;
+  text-transform: capitalize;
   color: var(--light-green);
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
@@ -1784,6 +1784,11 @@ button {
 @media (min-width: 1440px) {
   .container-skills {
     gap: 100px;
+    background-image: url("../images/svg/skills-ellipse-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position-x: 360px;
+    background-position-y: -60px;
   }
 }
 
@@ -1917,10 +1922,6 @@ button {
     display: flex;
     align-items: center;
     gap: 5px;
-    background-image: url("../images/svg/skills-ellipse-bg.svg");
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: center;
   }
 }
 

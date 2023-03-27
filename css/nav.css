@@ -45,8 +45,8 @@
 
 .nav__item {
   font-size: 15px;
-  font-weight: 600;
-  text-transform: lowercase;
+  font-weight: 400;
+  text-transform: capitalize;
   color: var(--light-green);
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
