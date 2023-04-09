@@ -1,4 +1,5 @@
 //фиксирование шапки при скролле лендинга
+
 const headerNav = document.querySelector('.header__container');
 const first = document.querySelector('.services');
 const header = document.querySelector('header')
