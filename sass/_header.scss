@@ -21,6 +21,11 @@
   @media (min-width: 1440px) {
     margin-bottom: 100px;
     padding-bottom: 65px;
+
+    // фикс прыжка при скролле контента в момент фиксирования меню
+    &--fix {
+      padding-top: 125px;
+    }
   }
 }
 
@@ -31,11 +36,11 @@
     left: 0;
     right: 0;
     z-index: 15;
-    background-color: #D9FADD;
+    background-color: #d9fadd;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     box-shadow: 0 0px 15px -9px #000000;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
   }
 
   & .header__btn.button--style {
@@ -146,7 +151,7 @@
     line-height: 20px;
     letter-spacing: 2px;
     color: var(--light-white);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     &.button--style {
       border: 10px solid transparent;
