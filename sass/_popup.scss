@@ -1,214 +1,244 @@
 .popup,
 .popup-feedback {
   display: none;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: rgba(217, 250, 221, 0.55);
-  backdrop-filter: blur(7px);
-  z-index: 999;
-  transition: all .3s ease;
 
-  &--active {
-    display: block;
+  @media (min-width: 1024px) {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(217, 250, 221, 0.55);
+    backdrop-filter: blur(7px);
+    z-index: 999;
+    transition: all 0.3s ease;
+
+    &--active {
+      display: block;
+    }
   }
 }
 
 .popup-feedback--active {
+  @media (min-width: 1024px) {
     display: block;
+  }
 }
 
 .popup__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .popup__main {
-  position: relative;
-  padding: 35px;
-  width: 445px;
-  height: 463px;
-  background-color: #d9fadd;
-  border-radius: 50px;
-  box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+  @media (min-width: 1024px) {
+    position: relative;
+    padding: 35px;
+    width: 445px;
+    height: 463px;
+    background-color: #d9fadd;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+  }
 }
 
 .popup-feedback__main {
-    height: 561px;
-    background-image: url('../images/svg/logo-desk.svg');
+  @media (min-width: 1024px) {
+    height: 600px;
+    background-image: url("../images/svg/logo-desk.svg");
     background-repeat: no-repeat;
     background-size: 228px 68px;
-    background-position: center 475px;
+    background-position: center 515px;
+  }
 }
 
 .popup__title {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  font-family: "Ruberoid", sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-  text-transform: capitalize;
-  line-height: 55px;
-  color: var(--light-green);
-  width: 319px;
+  @media (min-width: 1024px) {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Ruberoid", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: capitalize;
+    line-height: 55px;
+    color: var(--light-green);
+    width: 319px;
 
-  &--solid {
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 25px;
-      right: 5px;
-      width: 140px;
-      height: 2px;
-      background-color: #78c081;
+    &--solid {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 25px;
+        right: 5px;
+        width: 140px;
+        height: 2px;
+        background-color: #78c081;
+      }
     }
   }
 }
 
 .popup__content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 35px;
-  width: 445px;
-  height: 298px;
-  border-radius: 50px;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+  @media (min-width: 1024px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 35px;
+    width: 445px;
+    max-height: 330px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+  }
 }
 
 .popup-feedback__content {
+  @media (min-width: 1024px) {
     bottom: 100px;
 
     .feedback__form {
-        width: 100%;
+      width: 100%;
     }
 
     .feedback__items {
-        width: auto;
+      width: auto;
     }
-    
+
     .feedback__item {
-        width: 100%;
+      width: 100%;
     }
 
     .feedback__submit {
-        width: 100%;
+      width: 100%;
     }
+  }
 }
 
 .popup__text {
-  margin: 0;
-  padding: 0;
-  font-family: "Proxima Nova", sans-serif;
-  font-weight: 400;
-  color: #7ca381;
-  margin-bottom: 20px;
+  @media (min-width: 1024px) {
+    margin: 0;
+    padding: 0;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    color: #7ca381;
+    margin-bottom: 20px;
+  }
 }
 
 .popup__feedback {
-  margin: 0;
-  padding: 0;
-  font-family: "Proxima Nova", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 600;
-  color: #7ca381;
-  margin-bottom: 15px;
+  @media (min-width: 1024px) {
+    margin: 0;
+    padding: 0;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #7ca381;
+    margin-bottom: 15px;
+  }
 }
 
 .popup__day {
-  display: block;
-  padding-top: 2px;
-  padding-bottom: 1px;
-  padding-left: 37px;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 600;
-  color: #7ca381;
-  margin-bottom: 42px;
-  background-image: url("../images/svg/clock-modal.svg");
-  background-repeat: no-repeat;
-  background-size: 22px 22px;
-  background-position: left center;
+  @media (min-width: 1024px) {
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 37px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #7ca381;
+    margin-bottom: 42px;
+    background-image: url("../images/svg/clock-modal.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: left center;
+  }
 }
 
 .popup__phone-list {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @media (min-width: 1024px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 39px;
-    background-color: #bee1c2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 39px;
+      background-color: #bee1c2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
 .popup__link-phone {
-  font-family: "Proxima Nova", sans-serif;
-  font-weight: 600;
-  font-size: inherit;
-  line-height: inherit;
-  color: #7b897d;
-  padding-left: 37px;
-  background-image: url("../images/phone-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center left;
-  background-size: contain;
+  @media (min-width: 1024px) {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 600;
+    font-size: inherit;
+    line-height: inherit;
+    color: #7b897d;
+    padding-left: 37px;
+    background-image: url("../images/phone-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+  }
 }
 
 .popup__close {
-  position: relative;
-  top: -230px;
-  right: -345px;
-  width: 70px;
-  height: 67px;
+  @media (min-width: 1024px) {
+    position: relative;
+    top: -230px;
+    right: -345px;
+    width: 70px;
+    height: 67px;
 
-  &.button--style {
-    border-radius: 25px;
-    border: 10px solid transparent;
-    transition: all 0.3s ease;
+    &.button--style {
+      border-radius: 25px;
+      border: 10px solid transparent;
+      transition: all 0.3s ease;
 
-    &:hover {
-      box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36),
-        100vw 0px 0px #54e165 inset;
+      &:hover {
+        box-shadow: inset 2px -2px 12px rgba(34, 111, 33, 0.36),
+          100vw 0px 0px #54e165 inset;
+      }
     }
-  }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    width: 30px;
-    height: 3px;
-    background-color: #ffffff;
-    border-radius: 10px;
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 30px;
+      height: 3px;
+      background-color: #ffffff;
+      border-radius: 10px;
+    }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    width: 30px;
-    height: 3px;
-    background-color: #ffffff;
-    border-radius: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 30px;
+      height: 3px;
+      background-color: #ffffff;
+      border-radius: 10px;
+    }
   }
 }
