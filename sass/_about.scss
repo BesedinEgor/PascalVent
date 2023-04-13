@@ -132,7 +132,6 @@
   }
 
   @media (min-width: 1024px) {
-    gap: 0;
     display: grid;
     grid-template-columns: repeat(2, 220px);
     gap: 50px;
@@ -142,7 +141,6 @@
 .about__item {
   position: relative;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   max-width: 241px;
   align-items: center;

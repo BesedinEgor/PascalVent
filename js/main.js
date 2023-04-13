@@ -49,53 +49,38 @@ function openContent(evt) {
 }
 
 //активация кнопки формы при заполненных полях ввода
-const inputs = [].slice.call(document.querySelectorAll('input[type="text"], input[type="tel"]')),
-button = document.querySelector('.feedback__submit'), footerButton = document.querySelector('.footer-feedback__submit') ;
 
-inputs.forEach(function(el){
-  el.addEventListener('input', checkInputs, false);
-});
-
-function checkInputs(){
-	const empty = inputs.filter(function(el){
-    return el.value.trim() === '';
-  }).length; 
-
-  button.disabled = empty !==2;
-  footerButton.disabled = empty !==2;
-}
-checkInputs();
 
 //закрытие/открытие поп-ап "Связаться"
-const openPopUp = document.getElementById('popup-open');
-const closePopUp = document.getElementById('pop-up-close');
-const popUp = document.getElementById('pop-up');
-const body = document.querySelector('body');
+const openPopUp = document.getElementById("popup-open");
+const closePopUp = document.getElementById("pop-up-close");
+const popUp = document.getElementById("pop-up");
+const body = document.querySelector("body");
 
-openPopUp.addEventListener('click', (e) => {
+openPopUp.addEventListener("click", (e) => {
   e.preventDefault();
-  popUp.classList.add('popup--active')
-  body.style.overflowY = 'hidden';
-})
+  popUp.classList.add("popup--active");
+  body.style.overflowY = "hidden";
+});
 
-closePopUp.addEventListener('click', () => {
-  popUp.classList.remove('popup--active')
-  body.style.overflowY = 'visible';
-})
+closePopUp.addEventListener("click", () => {
+  popUp.classList.remove("popup--active");
+  body.style.overflowY = "visible";
+});
 
 //закрытие/открытие поп-ап "Оставить заявку"
 
-const openPopupFeedback = document.querySelector('.header__application');
-const closePopupFeedback  = document.querySelector('.popup-feedback__close');
-const popup = document.querySelector('.popup-feedback');
+const openPopupFeedback = document.querySelector(".header__application");
+const closePopupFeedback = document.querySelector(".popup-feedback__close");
+const popup = document.querySelector(".popup-feedback");
 
-openPopupFeedback.addEventListener('click', (e) => {
+openPopupFeedback.addEventListener("click", (e) => {
   e.preventDefault();
-  popup.classList.add('popup-feedback--active')
-  body.style.overflowY = 'hidden';
-})
+  popup.classList.add("popup-feedback--active");
+  body.style.overflowY = "hidden";
+});
 
-closePopupFeedback.addEventListener('click', () => {
-  popup.classList.remove('popup-feedback--active')
-  body.style.overflowY = 'visible';
-})
+closePopupFeedback.addEventListener("click", () => {
+  popup.classList.remove("popup-feedback--active");
+  body.style.overflowY = "visible";
+});
