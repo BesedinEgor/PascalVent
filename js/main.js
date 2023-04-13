@@ -49,7 +49,25 @@ function openContent(evt) {
 }
 
 //активация кнопки формы при заполненных полях ввода
+const inputForm = document.querySelectorAll(
+  'input[type="text"]',
+  'input[type="tel"]'
+);
 
+const inputText = document.querySelectorAll("input[type='text']");
+const inputPhone = document.querySelectorAll("input[type='tel']");
+const buttonSubmit = document.querySelectorAll(".feedback__submit, .footer-feedback__submit");
+
+document.querySelectorAll("#name1, #phone1").forEach((el) => {
+  el.addEventListener("input", () => {
+
+    if (inputText.value === " " || inputPhone.value === " ") {
+      buttonSubmit.disabled = true;
+    } else {
+      buttonSubmit.disabled = false;
+    }
+  });
+});
 
 //закрытие/открытие поп-ап "Связаться"
 const openPopUp = document.getElementById("popup-open");
