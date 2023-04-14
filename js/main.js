@@ -21,7 +21,6 @@ document.addEventListener("click", function (event) {
 burgerBtn.addEventListener("click", hundlerClick);
 
 //переключение табов
-
 const tabButton = document.querySelectorAll(".services__btn");
 const tabContent = document.querySelectorAll(".services__options-content");
 
@@ -92,15 +91,18 @@ closePopUp.addEventListener("click", () => {
 });
 
 //закрытие/открытие поп-ап "Оставить заявку"
-
-const openPopupFeedback = document.querySelector(".header__application");
+const openPopupFeedback = document.querySelectorAll(
+  ".header__application, .skills__feedback"
+);
 const closePopupFeedback = document.querySelector(".popup-feedback__close");
 const popup = document.querySelector(".popup-feedback");
 
-openPopupFeedback.addEventListener("click", (e) => {
-  e.preventDefault();
-  popup.classList.add("popup-feedback--active");
-  body.style.overflowY = "hidden";
+openPopupFeedback.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    popup.classList.add("popup-feedback--active");
+    body.style.overflowY = "hidden";
+  });
 });
 
 closePopupFeedback.addEventListener("click", () => {

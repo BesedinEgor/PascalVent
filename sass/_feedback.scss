@@ -62,14 +62,6 @@
       margin-right: 30px;
     }
   }
-
-  &:nth-child(2) {
-    margin-bottom: 25px;
-
-    @media (min-width: 1024px) {
-      margin-bottom: 0;
-    }
-  }
 }
 
 .feedback__input {
@@ -136,7 +128,7 @@
 
   &:disabled {
     box-shadow: inset 2px -2px 12px rgb(34 111 33 / 36%),
-      300px 0px 0px rgba(34, 111, 33, 0.36) inset;
+      600px 0px 0px rgba(34, 111, 33, 0.36) inset;
 
     @media (min-width: 640px) {
       box-shadow: inset 2px -2px 12px rgb(34 111 33 / 36%),
