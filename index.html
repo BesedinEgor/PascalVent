@@ -566,7 +566,7 @@
                 <ul class="feedback__items list-reset">
                   <li class="feedback__item">
                     <input
-                      class="feedback__input"
+                      class="feedback__input input1"
                       type="text"
                       name="name"
                       id="name"
@@ -576,22 +576,22 @@
                   </li>
                   <li class="feedback__item">
                     <input
-                      class="feedback__input"
+                      class="feedback__input input1"
                       type="tel"
                       name="phone"
                       id="phone"
-                      pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                       placeholder="Номер телефона*"
-                      minlength="18"
-                      maxlength="18"
+                      minlength="16"
+                      maxlength="16"
+                      required
                     />
                     <span class="feedback-form__error"
-                      >Необходимый формат поля +7 (999) 999-99-99</span
+                      >Необходимый формат поля +7(999)999-99-99</span
                     >
                   </li>
                   <li class="feedback__item">
                     <button
-                      class="feedback__submit button button--style"
+                      class="feedback__submit button button--style btn1"
                       type="submit"
                       id="form1"
                       disabled
@@ -1859,6 +1859,7 @@
                       name="name"
                       id="name2"
                       placeholder="Ваше Имя*"
+                      required
                     />
                   </li>
                   <li class="feedback__item footer__item">
@@ -1868,12 +1869,12 @@
                       name="phone"
                       id="phone2"
                       placeholder="Номер телефона*"
-                      pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-                      minlength="18"
-                      maxlength="18"
+                      minlength="16"
+                      maxlength="16"
+                      required
                     />
                     <span class="feedback-form__error"
-                      >Необходимый формат поля +7 (999) 999-99-99</span
+                      >Необходимый формат поля +7(999)999-99-99</span
                     >
                   </li>
                   <li class="feedback__item footer__item">
@@ -1952,6 +1953,7 @@
                       name="name"
                       id="name1"
                       placeholder="Ваше Имя*"
+                      required
                     />
                   </li>
                   <li class="feedback__item footer__item">
@@ -1961,19 +1963,20 @@
                       name="phone"
                       id="phone1"
                       placeholder="Номер телефона*"
-                      pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-                      minlength="18"
-                      maxlength="18"
+                      minlength="16"
+                      maxlength="16"
+                      required
                     />
                     <span class="feedback-form__error"
-                      >Необходимый формат поля +7 (999) 999-99-99</span
+                      >Необходимый формат поля (без пробелов)
+                      +7(999)999-99-99</span
                     >
                   </li>
                   <li class="feedback__item footer__item">
                     <button
                       class="feedback__submit footer-feedback__submit button button--style"
                       type="submit"
-                      disa
+                      disabled
                     >
                       отправить
                     </button>

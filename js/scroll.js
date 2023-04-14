@@ -6,7 +6,6 @@ const header = document.querySelector('header')
 
 const headerHeight = headerNav.offsetHeight;
 const firstHeight = first.offsetHeight;
-console.log(headerHeight);
 
 window.addEventListener('scroll', () => {
   let scrollDistance = window.scrollY;

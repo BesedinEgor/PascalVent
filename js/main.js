@@ -48,26 +48,31 @@ function openContent(evt) {
     .classList.add("services__options-content--active");
 }
 
-//активация кнопки формы при заполненных полях ввода
-const inputForm = document.querySelectorAll(
-  'input[type="text"]',
-  'input[type="tel"]'
-);
+//активация/деактивация кнопки формы при заполненных полях ввода c проверкой на пустоту и валидность
+const forms = document.querySelectorAll("form");
 
-const inputText = document.querySelectorAll("input[type='text']");
-const inputPhone = document.querySelectorAll("input[type='tel']");
-const buttonSubmit = document.querySelectorAll(".feedback__submit, .footer-feedback__submit");
+forms.forEach((form) => {
+  const nameInput = form.querySelector('input[type="text"]');
+  const phoneInput = form.querySelector('input[type="tel"]');
+  const submitButton = form.querySelector('button[type="submit"]');
 
-document.querySelectorAll("#name1, #phone1").forEach((el) => {
-  el.addEventListener("input", () => {
+  nameInput.addEventListener("input", checkFormValidity);
+  phoneInput.addEventListener("input", checkFormValidity);
 
-    if (inputText.value === " " || inputPhone.value === " ") {
-      buttonSubmit.disabled = true;
+  function checkFormValidity() {
+    if (nameInput.validity.valid && isValidPhone(phoneInput.value)) {
+      submitButton.disabled = false;
     } else {
-      buttonSubmit.disabled = false;
+      submitButton.disabled = true;
     }
-  });
+  }
 });
+
+function isValidPhone(phone) {
+  // проверяем, что номер телефона соответствует заданному формату
+  const phoneRegex = /^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$/;
+  return phoneRegex.test(phone);
+}
 
 //закрытие/открытие поп-ап "Связаться"
 const openPopUp = document.getElementById("popup-open");
