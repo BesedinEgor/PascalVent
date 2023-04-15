@@ -1,5 +1,12 @@
 .skills {
   margin-bottom: 70px;
+  opacity: 0;
+
+  &.element-show {
+    opacity: 1;
+    transition: all 0.5s ease;
+    transition-delay: 0.3s;
+  }
 }
 
 .container-skills {
@@ -12,7 +19,7 @@
 
   @media (min-width: 1440px) {
     gap: 100px;
-    background-image: url('../images/svg/skills-ellipse-bg.svg');
+    background-image: url("../images/svg/skills-ellipse-bg.svg");
     background-repeat: no-repeat;
     background-size: 75%;
     background-position-x: 360px;
@@ -138,7 +145,7 @@
   &:hover {
     &.button--style {
       box-shadow: inset 2px -2px 12px rgb(34 111 33 / 36%),
-      900px 0px 0px #54e165 inset;
+        900px 0px 0px #54e165 inset;
     }
   }
 }

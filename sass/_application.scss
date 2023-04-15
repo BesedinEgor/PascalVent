@@ -17,6 +17,15 @@
 
 .application__title-box {
   padding-bottom: 56px;
+  opacity: 0;
+  transform: translateY(50px);
+
+  &.element-show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+  }
 
   @media (min-width: 1024px) {
     max-width: 635px;
