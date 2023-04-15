@@ -109,11 +109,11 @@
 
 .steps__offer {
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateY(-50px);
 
   &.element-show {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0px);
     transition: all 0.5s ease;
     transition-delay: 0.3s;
   }
@@ -121,6 +121,11 @@
   @media (min-width: 1024px) {
     order: 2;
     margin-bottom: 65px;
+    transform: translateX(100px);
+
+    &.element-show {
+      transform: translateX(0px);
+    }
   }
 }
 

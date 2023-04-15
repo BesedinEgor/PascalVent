@@ -27,13 +27,21 @@
 .portfolio__title-box {
   margin-bottom: 25px;
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateY(-50px);
 
   &.element-show {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
     transition: all 0.5s ease;
     transition-delay: 0.1s;
+  }
+
+  @media (min-width: 1024px) {
+    transform: translateX(-100px);
+
+    &.element-show {
+      transform: translateX(0);
+    }
   }
 }
 
@@ -61,11 +69,11 @@
 .portfolio__content {
   margin-bottom: 30px;
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateY(-50px);
 
   &.element-show {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
     transition: all 0.5s ease;
     transition-delay: 0.1s;
   }
@@ -73,6 +81,11 @@
   @media (min-width: 1024px) {
     width: 600px;
     margin-bottom: 0;
+    transform: translateX(100px);
+
+    &.element-show {
+      transform: translateX(0);
+    }
   }
 
   @media (min-width: 1440px) {
